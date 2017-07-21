@@ -6,7 +6,6 @@ AppTheme.NoActionBar    </br>
         name="android:fitsSystemWindows"  =  true   </br>
         name="windowActionBar"     =   false   </br>
         name="windowNoTitle"    =     true   </br>
-        ---------------------------------------------------------------------------------------
 * ###  闪屏页，登录页，指引页不需要沉浸式可以全屏显示，同样需要设置一个主题
 在上面的主题中加入 </br>
 name="android:windowFullscreen"  =  true  </br> 
