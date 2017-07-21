@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:id="@+id/rg_interaction_detail"
+            android:orientation="horizontal">
+<Space
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"/>
+
+    <RadioButton
+        android:id="@+id/rb_class"
+        style="@style/interaction_detail_top"
+        android:drawableLeft="@drawable/rb_class_drawable_selector"
+        android:text="课程信息"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"/>
+
+    <RadioButton
+        android:id="@+id/rb_document"
+        style="@style/interaction_detail_top"
+        android:drawableLeft="@drawable/rb_document_drawable_selector"
+        android:text="共享文档"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"/>
+</RadioGroup>

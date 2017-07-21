@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">云课堂</string>
+    <string name="splash_name">欢迎进入云课堂</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

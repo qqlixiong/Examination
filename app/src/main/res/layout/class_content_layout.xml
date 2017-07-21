@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:text="课程介绍"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView24"/>
+
+    <me.codeboy.android.aligntextview.AlignTextView
+        android:text="      积极心理学是美国心理学界正在兴起的一个新的研究领域，以Seligman和Csikzentmihalyi的2000年1月《积极心理学导论》为标志，愈来愈多的心理学家开始涉足此领域的研究，矛头直指向过去近一个世纪中占主导地位的消极心理学模式，逐渐形成一场积极心理学运动。积极心理学英文为Positive Psychology，它是指利用心理学目前已比较完善和有效的实验方法与测量手段，来研究人类的力量和美德等积极方面的一个心理学思潮。积极心理学的研究对象是平均水平的普通人，它要求心理学家用一种更加开放的、欣赏性的眼光去看待人类的潜能、动机和能力等。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/textView24"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView25"/>
+</RelativeLayout>

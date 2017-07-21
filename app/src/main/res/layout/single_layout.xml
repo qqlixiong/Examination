@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_prepare_test_radioBtnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_10"
+        >
+
+        <TextView
+            android:background="@drawable/answer_choose_bg"
+            android:id="@+id/activity_prepare_test_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/practice_test_content_text"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/activity_prepare_test_layout_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="invisible"
+            android:background="@drawable/answer_choose_bg"
+            android:padding="@dimen/home_menu_margin_8" >
+
+            <ImageView
+                android:id="@+id/vote_submit_select_image_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_practice_test_normal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/vote_submit_select_text_a"
+                android:layout_toEndOf="@+id/vote_submit_select_text_a"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:id="@+id/textView_content_a"/>
+
+            <TextView
+                android:text="您给出的回答选项？"
+                android:id="@+id/vote_submit_select_text_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_alignTop="@+id/vote_submit_select_image_a"
+                android:layout_toRightOf="@+id/vote_submit_select_image_a"
+                android:layout_toEndOf="@+id/vote_submit_select_image_a"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_prepare_test_layout_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:background="@drawable/answer_choose_bg"
+            android:padding="@dimen/home_menu_margin_8" >
+
+            <TextView
+                android:text="您给出的回答选项？"
+                android:id="@+id/vote_submit_select_text_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_marginStart="4dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vote_submit_select_image_b"
+                android:layout_toEndOf="@+id/vote_submit_select_image_b"/>
+
+            <ImageView
+                android:id="@+id/vote_submit_select_image_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_practice_test_normal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content_b"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/vote_submit_select_text_b"
+                android:layout_toEndOf="@+id/vote_submit_select_text_b"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_prepare_test_layout_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:background="@drawable/answer_choose_bg"
+            android:padding="@dimen/home_menu_margin_8" >
+
+            <TextView
+                android:text="您给出的回答选项？"
+                android:id="@+id/vote_submit_select_text_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vote_submit_select_image_c"
+                android:layout_toEndOf="@+id/vote_submit_select_image_c"/>
+
+            <ImageView
+                android:id="@+id/vote_submit_select_image_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_practice_test_normal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content_c"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/vote_submit_select_text_c"
+                android:layout_toEndOf="@+id/vote_submit_select_text_c"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_prepare_test_layout_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:background="@drawable/answer_choose_bg"
+            android:padding="@dimen/home_menu_margin_8" >
+
+            <TextView
+                android:text="您给出的回答选项？"
+                android:id="@+id/vote_submit_select_text_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/vote_submit_select_image_d"
+                android:layout_toEndOf="@+id/vote_submit_select_image_d"
+                android:layout_marginStart="4dp"/>
+
+            <ImageView
+                android:id="@+id/vote_submit_select_image_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_practice_test_normal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content_d"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vote_submit_select_text_d"
+                android:layout_toEndOf="@+id/vote_submit_select_text_d"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_prepare_test_layout_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:background="@drawable/answer_choose_bg"
+            android:padding="@dimen/home_menu_margin_8" >
+
+            <TextView
+                android:text="您给出的回答选项？"
+                android:id="@+id/vote_submit_select_text_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vote_submit_select_image_e"
+                android:layout_toEndOf="@+id/vote_submit_select_image_e"
+                android:layout_marginStart="4dp"/>
+
+            <ImageView
+                android:id="@+id/vote_submit_select_image_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_practice_test_normal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content_e"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/vote_submit_select_text_e"
+                android:layout_toEndOf="@+id/vote_submit_select_text_e"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_prepare_test_layout_f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="invisible"
+            android:orientation="horizontal"
+            android:background="@drawable/answer_choose_bg"
+            android:padding="@dimen/home_menu_margin_8" >
+
+            <TextView
+                android:text="您给出的回答选项？"
+                android:id="@+id/vote_submit_select_text_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vote_submit_select_image_f"
+                android:layout_toEndOf="@+id/vote_submit_select_image_f"
+                android:layout_marginStart="4dp"/>
+
+            <ImageView
+                android:id="@+id/vote_submit_select_image_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_practice_test_normal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content_f"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/vote_submit_select_text_f"
+                android:layout_toEndOf="@+id/vote_submit_select_text_f"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_prepare_test_layout_g"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:background="@drawable/answer_choose_bg"
+            android:padding="@dimen/home_menu_margin_8" >
+
+            <TextView
+                android:text="您给出的回答选项？"
+                android:id="@+id/vote_submit_select_text_g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vote_submit_select_image_g"
+                android:layout_toEndOf="@+id/vote_submit_select_image_g"
+                android:layout_marginStart="4dp"/>
+
+            <ImageView
+                android:id="@+id/vote_submit_select_image_g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_practice_test_normal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content_g"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vote_submit_select_text_g"
+                android:layout_toEndOf="@+id/vote_submit_select_text_g"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_prepare_test_layout_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:background="@drawable/answer_choose_bg"
+            android:padding="@dimen/home_menu_margin_8" >
+
+            <TextView
+                android:text="您给出的回答选项？"
+                android:id="@+id/vote_submit_select_text_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vote_submit_select_image_h"
+                android:layout_toEndOf="@+id/vote_submit_select_image_h"
+                android:layout_marginStart="4dp"/>
+
+            <ImageView
+                android:id="@+id/vote_submit_select_image_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_practice_test_normal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content_h"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/vote_submit_select_text_h"
+                android:layout_toEndOf="@+id/vote_submit_select_text_h"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_prepare_test_layout_i"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:background="@drawable/answer_choose_bg"
+            android:padding="@dimen/home_menu_margin_8" >
+
+            <TextView
+                android:text="您给出的回答选项？"
+                android:id="@+id/vote_submit_select_text_i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vote_submit_select_image_i"
+                android:layout_toEndOf="@+id/vote_submit_select_image_i"
+                android:layout_marginStart="4dp"/>
+
+            <ImageView
+                android:id="@+id/vote_submit_select_image_i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_practice_test_normal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content_i"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vote_submit_select_text_i"
+                android:layout_toEndOf="@+id/vote_submit_select_text_i"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_prepare_test_layout_j"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:background="@drawable/answer_choose_bg"
+            android:padding="@dimen/home_menu_margin_8" >
+
+            <TextView
+                android:text="您给出的回答选项？"
+                android:id="@+id/vote_submit_select_text_j"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vote_submit_select_image_j"
+                android:layout_toEndOf="@+id/vote_submit_select_image_j"
+                android:layout_marginStart="4dp"/>
+
+            <ImageView
+                android:id="@+id/vote_submit_select_image_j"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_practice_test_normal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content_j"
+                android:textSize="16sp"
+                android:textColor="@color/practice_test_result_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/vote_submit_select_text_j"
+                android:layout_toEndOf="@+id/vote_submit_select_text_j"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

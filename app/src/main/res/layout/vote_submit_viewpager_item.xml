@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:background="#288df5" >
+
+    <LinearLayout
+        android:id="@+id/activity_prepare_test_upLayout"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_menu_margin_5"
+            android:src="@drawable/ic_practice_up_subject" />
+
+        <TextView
+            style="@style/menu_bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_menu_margin_8"
+            android:layout_marginTop="@dimen/home_menu_margin_5"
+            android:text="上一题" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_prepare_test_errorLayout"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/menu_bottom_errorIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_menu_margin_5"
+            android:src="@drawable/ic_practice_test_error" />
+
+        <TextView
+            android:id="@+id/menu_bottom_errorTV"
+            style="@style/menu_bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_menu_margin_8"
+            android:layout_marginTop="@dimen/home_menu_margin_5"
+            android:text="收藏" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_prepare_test_nextLayout"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/menu_bottom_nextIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_menu_margin_5"
+            android:src="@drawable/ic_practice_next_subject" />
+
+        <TextView
+            android:id="@+id/menu_bottom_nextTV"
+            style="@style/menu_bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_menu_margin_8"
+            android:layout_marginTop="@dimen/home_menu_margin_5"
+            android:text="下一题" />
+
+        </LinearLayout>
+
+</LinearLayout>

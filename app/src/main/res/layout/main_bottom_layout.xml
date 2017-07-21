@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:id="@+id/rg_main"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/rb_exam"
+        style="@style/bottom_tag_style"
+        android:drawableTop="@drawable/rb_exam_drawable_selector"
+        android:text="考试"/>
+
+    <RadioButton
+        android:id="@+id/rb_interaction"
+        style="@style/bottom_tag_style"
+        android:drawableTop="@drawable/rb_interaction_drawable_selector"
+        android:text="互动"/>
+
+    <RadioButton
+        android:id="@+id/rb_direct"
+        style="@style/bottom_tag_style"
+        android:drawableTop="@drawable/rb_direct_drawable_selector"
+        android:text="直播"/>
+
+    <RadioButton
+        android:id="@+id/rb_square"
+        style="@style/bottom_tag_style"
+        android:drawableTop="@drawable/rb_square_drawable_selector"
+        android:text="广场"/>
+
+    <RadioButton
+        android:id="@+id/rb_my"
+        style="@style/bottom_tag_style"
+        android:drawableTop="@drawable/rb_my_drawable_selector"
+        android:text="我的"/>
+</RadioGroup>

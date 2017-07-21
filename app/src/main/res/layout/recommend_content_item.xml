@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_recommend_head"
+                android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <include layout="@layout/recommend_head_item"
+        android:id="@+id/recommend_head_item"/>
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/recommend_head_item"
+        style="@style/line_view"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recommend"
+        android:scrollbars="none"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_view"/>
+</RelativeLayout>

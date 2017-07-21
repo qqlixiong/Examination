@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/activity_interaction_detail"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shlw.cloudclassroom.interaction.InteractionDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/interaction_detail_head_layout"/>
+
+        <include layout="@layout/interaction_detail_top_layout"/>
+
+        <include layout="@layout/scroll_bar_layout"/>
+
+        <FrameLayout
+            android:id="@+id/fl_interaction_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

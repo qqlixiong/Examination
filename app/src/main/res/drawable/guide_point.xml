@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true" android:drawable="@drawable/guide_point_one"/>
+
+    <item android:state_enabled="false" android:drawable="@drawable/guide_point_tow"/>
+</selector>

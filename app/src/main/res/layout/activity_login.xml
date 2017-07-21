@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:background="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <TextView
+            android:text="教师"
+            style="@style/login_text"
+            android:layout_alignBottom="@+id/textView_student"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginEnd="60dp"
+            android:id="@+id/textView_teacher"/>
+
+        <TextView
+            android:text="学生"
+            style="@style/login_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/textView_student"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:src="@drawable/lo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:id="@+id/imageView_my"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            style="@style/edit_text_bg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:hint="请输入用户名"
+            android:drawableLeft="@drawable/username"
+            android:id="@+id/editText_username"/>
+
+        <View
+            style="@style/line_view"/>
+
+        <EditText
+            style="@style/edit_text_bg"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:hint="请输入密码"
+            android:drawableLeft="@drawable/psw"
+            android:id="@+id/editText_password"/>
+
+        <View
+            style="@style/line_view"/>
+
+        <RelativeLayout
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/forget_password_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="忘记密码"/>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/ib_ok"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login"/>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="注册"/>
+
+    </LinearLayout>
+
+</LinearLayout>

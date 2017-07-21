@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginTop="8dp"
+                android:id="@+id/rl_interaction"
+                android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/kejian1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/iv_interaction"/>
+
+    <TextView
+        android:text="哈佛医疗视频教学系统建立"
+        android:textSize="16sp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_interaction"
+        android:layout_toRightOf="@+id/iv_interaction"
+        android:layout_toEndOf="@+id/iv_interaction"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tv_interaction"/>
+
+    <TextView
+        android:text="王小小"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_interaction"
+        android:layout_alignLeft="@+id/tv_interaction"
+        android:layout_alignStart="@+id/tv_interaction"
+        android:layout_marginTop="32dp"
+        android:id="@+id/tv_interaction_name"/>
+
+    <TextView
+        android:text="限时免费"
+        android:textColor="#00aeff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_interaction_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/tv_interaction_time"/>
+
+    <View
+        android:layout_below="@id/iv_interaction"
+        android:layout_marginTop="16dp"
+        style="@style/line_view"/>
+</RelativeLayout>

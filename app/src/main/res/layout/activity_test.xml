@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_test"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shlw.cloudclassroom.home.student.activity.TestActivity">
+
+    <include layout="@layout/titlebar"
+        android:id="@+id/title_bar"/>
+
+    <ScrollView
+        android:padding="16dp"
+        android:id="@+id/scroll_view"
+        android:layout_below="@id/title_bar"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/single_layout"/>
+    </ScrollView>
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/up"
+                android:text="上一题"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="下一题"
+                android:id="@+id/next"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:text="提交"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:id="@+id/refer"
+            android:layout_below="@+id/linear_layout"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:text="用时：5分20秒"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/refer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/time"/>
+    </RelativeLayout>
+</RelativeLayout>

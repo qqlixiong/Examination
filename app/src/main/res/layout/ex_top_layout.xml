@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:id="@+id/rg_rp_main"
+            android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/rb_a"
+        style="@style/bottom_tag_style"
+        android:textSize="16sp"
+        android:drawableBottom="@drawable/rb_ex_drawable_selector"
+        android:text="子题库"/>
+
+    <RadioButton
+        android:id="@+id/rb_b"
+        android:textSize="16sp"
+        style="@style/bottom_tag_style"
+        android:drawableBottom="@drawable/rb_ex_drawable_selector"
+        android:text="知识点"/>
+</RadioGroup>

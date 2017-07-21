@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_setting"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".my.activity.SettingActivity">
+
+    <include layout="@layout/titlebar"/>
+
+    <TextView
+        android:layout_margin="16dp"
+        android:text="清理缓存"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_clear_cache"/>
+
+    <TextView
+        android:text="修改密码"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_change_password"/>
+
+    <TextView
+        android:text="关于"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_as_regards"/>
+
+    <TextView
+        android:text="退出"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_exit"/>
+
+
+</LinearLayout>

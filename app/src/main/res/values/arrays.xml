@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="url4">
+        <item>http://www.joysw.com:8702/wap_stu/wstatic/img/banner1.png</item>
+        <item>http://www.joysw.com:8702/wap_stu/wstatic/img/banner2.png</item>
+        <item>http://www.joysw.com:8702/wap_stu/wstatic/img/banner3.png</item>
+        <item>http://www.joysw.com:8702/wap_stu/wstatic/img/banner4.png</item>
+    </array>
+</resources>
