@@ -61,6 +61,7 @@ public class LoginActivity extends BaseActivity implements NoStatusBar{
         }else {
             IntentUtil.startActivity(LoginActivity.this,MainMainActivity.class);
         }
+        sharedPreferenceUtil.set(Constant.LOGIN_SUCCESS,true);
         finish();
     }
 

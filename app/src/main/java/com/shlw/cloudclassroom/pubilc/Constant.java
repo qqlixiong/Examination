@@ -12,6 +12,7 @@ public class Constant {
     public static final int SPLASH_WHAT = 1001;
     //标识
     public static final String FLAG = "flag";
+    public static final String LOGIN_SUCCESS = "login_success";
     public static final String SP = "cloud_class_room_sp";
     public static final String VERSION_KEY = "version_code";
     public static final String POSITION = "position";
